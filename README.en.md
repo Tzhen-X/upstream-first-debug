@@ -1,5 +1,7 @@
 # upstream-first-debug
 
+DSH discovery and downloads: [dsh-upstream-first-debug](https://github.com/Tzhen-X/dsh-upstream-first-debug).
+
 [简体中文](README.md)
 
 Check the actual runtime, upstream releases and applicable reports before patching third-party failures. Verify recovery through the user's actual entry point.

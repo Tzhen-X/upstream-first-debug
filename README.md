@@ -1,5 +1,7 @@
 # upstream-first-debug · 上游优先排障
 
+DSH 独立发现与下载入口：[dsh-upstream-first-debug](https://github.com/Tzhen-X/dsh-upstream-first-debug)。
+
 [English](README.en.md)
 
 第三方工具报错时，先确认实际运行版本、核对上游修复是否已发布，再决定本地修复，并通过用户实际入口验证结果。
