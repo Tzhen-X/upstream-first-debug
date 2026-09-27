@@ -6,7 +6,7 @@ DSH 独立发现与下载入口：[dsh-upstream-first-debug](https://github.com/
 
 第三方工具报错时，先确认实际运行版本、核对上游修复是否已发布，再决定本地修复，并通过用户实际入口验证结果。
 
-作者 **Tzhen** · **MIT** · 版本 **0.1.0** · 指令正文为中文。
+作者 **Tzhen** · **MIT** · 版本 **0.1.1** · 指令正文为中文。
 
 ## 为什么用它
 
@@ -25,14 +25,20 @@ DSH 独立发现与下载入口：[dsh-upstream-first-debug](https://github.com/
 
 ## 安装与调用
 
-- [通用版 ZIP](https://github.com/Tzhen-X/upstream-first-debug/releases/download/v0.1.0/upstream-first-debug-0.1.0.zip)
-- [DSH 版 ZIP](https://github.com/Tzhen-X/upstream-first-debug/releases/download/v0.1.0/dsh-upstream-first-debug-0.1.0.zip)
+- [通用版 ZIP](https://github.com/Tzhen-X/upstream-first-debug/releases/download/v0.1.1/upstream-first-debug-0.1.1.zip)
+- [DSH 版 ZIP](https://github.com/Tzhen-X/upstream-first-debug/releases/download/v0.1.1/dsh-upstream-first-debug-0.1.1.zip)
 
-下载对应 ZIP 并解压，将其中以技能名命名的文件夹放进目标技能根；或从本仓库的 skills 目录复制所选文件夹。最终必须是“技能根 / 技能名称 / SKILL.md”，不要多嵌套一层仓库目录。安装前检查是否已有同名副本，更新时先备份。安装包见 [v0.1.0 Release](https://github.com/Tzhen-X/upstream-first-debug/releases/tag/v0.1.0)。
+下载对应 ZIP 并解压，将其中以技能名命名的文件夹放进目标技能根；或从本仓库的 skills 目录复制所选文件夹。最终必须是“技能根 / 技能名称 / SKILL.md”，不要多嵌套一层仓库目录。安装前检查是否已有同名副本，更新时先备份。安装包见 [v0.1.1 Release](https://github.com/Tzhen-X/upstream-first-debug/releases/tag/v0.1.1)。
 
 新开任务，明确说“使用 upstream-first-debug 排查这个第三方工具错误”，DSH 版用其完整名称。先确认 Agent 读取了技能。自动选择由宿主与模型决定；没有出现时检查安装根及目录层级。
 
 用户技能目录的依据：[Codex 官方技能文档](https://developers.openai.com/codex/skills)、[DSH 官方技能文档](https://github.com/deepseek-ai/deepseek-harness/blob/master/docs/subsystems/skills.md)。DSH 配置了 DSH_HOME 时使用该目录下的 skills；项目级安装及限制见各版安装说明。
+
+## DSH 最新版适配
+
+已用 **DSH 0.1.7-rc.2** 的官方发布组件验证 v0.1.1，包括用户目录、两种项目目录、完整正文加载和显式调用；验证层级见 [VALIDATION.md](VALIDATION.md)。
+
+新版可在消息中输入 `/dsh-upstream-first-debug` 显式加载 DSH 版。安装格式和核心排障正文保持兼容；[兼容表](DSH-COMPATIBILITY.md)列出确切已测版本，不承诺未测区间。v0.1.0 固定下载继续保留。
 
 ## 适用范围
 

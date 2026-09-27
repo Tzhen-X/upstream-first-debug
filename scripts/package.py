@@ -8,7 +8,7 @@ import zipfile
 
 ROOT=Path(__file__).resolve().parents[1]
 NAMES=('upstream-first-debug','dsh-upstream-first-debug')
-SHARED=('LICENSE','SOURCES.md','VALIDATION.md','examples.md')
+SHARED=('LICENSE','SOURCES.md','VALIDATION.md','examples.md','DSH-COMPATIBILITY.md')
 
 def read_skill(name):
     text=(ROOT/'skills'/name/'SKILL.md').read_text(encoding='utf-8')

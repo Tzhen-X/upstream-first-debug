@@ -1,6 +1,18 @@
 # 验证范围与结果
 
-验证版本：0.1.0。验证日期：2026-09-15。平台：Windows。
+当前验证版本：0.1.1。最新验证日期：2026-09-27。平台：Windows。
+
+## 0.1.1 最新版组件验证
+
+三个官方 npm 包 dsh-skill、dsh-skill-filesystem、dsh-tool-skill 均固定 0.1.7-rc.2，隔离安装且禁用生命周期脚本。用实际 v0.1.1 ZIP 解压后的文件测试，用户根、项目 .dsh/skills 和项目 .agents/skills 共 3 种布局均通过发现、默认双调用策略、完整正文、工具输出渲染和用户显式调用。通用版 ZIP 在新版共享技能项目根也通过。
+
+同一 v0.1.1 DSH ZIP 在官方 0.1.6-alpha.1 组件中通过用户根发现、完整正文和工具输出；旧 v0.1.0 指令在 0.1.7-rc.2 中亦通过，核心正文没有改变。新版每个 ZIP 为 7 文件，增加 DSH-COMPATIBILITY.md。
+
+维护者可在临时目录安装这三个指定版本的 npm 测试依赖，使用仓库 scripts/check_dsh.mjs；参数 --runtime-root 指向含这些依赖的目录，--skill-dir 指向解压后的技能目录，--work-dir 必须为尚不存在的隔离目录。--layout 可选 user-dsh、project-dsh 或 project-agents；在 0.1.7-rc.2 使用 --check-slash true 验证显式调用。该脚本不请求模型，也不修改用户技能根。
+
+这是加载组件验收，宿主事件注册壳由测试替代。未启动完整桌面/Web UI、未验证在途会话热刷新，也未重新进行 Codex 接口验收；首版 Codex 发现证据仅属于 0.1.0。
+
+## 0.1.0 历史验收（2026-09-15）
 
 ## 实际执行
 

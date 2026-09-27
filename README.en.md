@@ -6,7 +6,7 @@ DSH discovery and downloads: [dsh-upstream-first-debug](https://github.com/Tzhen
 
 Check the actual runtime, upstream releases and applicable reports before patching third-party failures. Verify recovery through the user's actual entry point.
 
-Author: Tzhen. License: MIT. Version: 0.1.0. The skill instructions are written in Chinese.
+Author: Tzhen. License: MIT. Version: 0.1.1. The skill instructions are written in Chinese.
 
 Choose `skills/upstream-first-debug` for a compatible general-purpose agent, or `skills/dsh-upstream-first-debug` for DSH. The instruction bodies are identical; the DSH edition changes only the name and description. Copy the chosen folder directly into your client's skill root. The usual user roots are `~/.agents/skills` for Codex and `~/.dsh/skills` for DSH; an explicit DSH_HOME changes the latter. Do not install the repository directory as an extra nesting layer.
 
@@ -14,4 +14,6 @@ Start a new task and explicitly ask the agent to use the skill. It needs the hos
 
 See [validation](VALIDATION.md), [examples](examples.md), [related work](SOURCES.md) and [DSH compatibility](DSH-COMPATIBILITY.md). This is independently maintained and not endorsed by OpenAI or DSH. No cross-model effectiveness benchmark or guaranteed success rate is claimed.
 
-Run `python scripts/package.py` to validate and build both ZIPs locally. It never publishes anything. Download the two distributions from [v0.1.0](https://github.com/Tzhen-X/upstream-first-debug/releases/tag/v0.1.0).
+Run `python scripts/package.py` to validate and build both ZIPs locally. It never publishes anything. Download the two distributions from [v0.1.1](https://github.com/Tzhen-X/upstream-first-debug/releases/tag/v0.1.1).
+
+DSH 0.1.7-rc.2 component checks cover user and project discovery, full-body loading, rendering, and explicit `/dsh-upstream-first-debug` invocation. This is not a full desktop/UI or model-effectiveness test. See the exact-version compatibility table. The v0.1.0 release remains available.
